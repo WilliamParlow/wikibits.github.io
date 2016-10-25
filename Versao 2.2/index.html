@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+		<title> Index </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/homestyle.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="script/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            // Show and hide mobile menu
+            $(document).ready(function() {
+                $('.menu-icon').on('click touchstart', function(e) {
+                    $('html').toggleClass('menu-active');
+                    e.preventDefault();
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!--        NAVEGAÇÃO HORIZONTAL        -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+
+        <nav class="hr-nav">
+
+            <!-- Navegação para Desktops e tablets -->
+
+            <ul class="nav-lst">
+                <li class="nav-lst-hd logo-margin">
+                     <a href="#" class="nav-lk nav-header"><span class="nav-header">WikiBitsTeam</span></a>
+                </li>
+                <li class="nav-lst nav-lst-pad">
+                     <a href="#" class="nav-lk">Home</a>
+                </li>
+                <li class="nav-lst nav-lst-pad dropdown">
+                     <a class="nav-lk"  href="content/index.html">Content</a>
+                </li>
+                <li class="nav-lst nav-lst-pad to-rigth">
+                     <a href="./about/about.html" class="nav-lk">About Us <span></span></a>
+                </li>
+                <li class="nav-lst-btn nav-lst-pad to-rigth">
+                    <button type="button" class="glyphicon glyphicon-th-list nav-lk menu-icon"></button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <menu class="menu-mb" id="menu-mb">
+
+            <button type="button" class="glyphicon glyphicon-th-list menu-icon to-right"></button>
+            <hr>
+
+            <nav class="vt-nav-mb">
+                <ul class="nav-lst">
+                    <li class="nav-lst-hm"><a class="vt-title" href="#">Home</a></li>
+                    
+                    <li class="nav-lst-hm"><a class="vt-title" href="content/index.html">Content</a><span class="hr"></span></li>
+                    
+                    <li class="nav-lst-hm"><a class="vt-title" href="about/about.html">About us</a></li>
+                    <span class="hr"></span>
+                </ul>
+
+            </nav>
+        </menu>
+        
+        <div class="hm-content">
+            <h1>O que você gostaria de aprender primeiro?</h1>
+            <br/><br/>
+                <ul>
+                    <li><a href="content/index.html#title1" onclick="show('show_topic1');">Conceitos básicos de Hardware</a></li>
+                    <li><a href="content/index.html#title2" onclick="show('show_topic2');">O Sistema binário</a></li>
+                    <li><a href="content/index.html#title3" onclick="show('show_topic1');">Como vídeos rodam e o que os influencia</a></li>
+                </ul>
+        </div>
+
+    <footer>
+        <ul>
+            <dt>Autores</dt>
+            <hr width="40%"/>
+            <li>William Parlow Nichelatti</li>
+            <li>Anderson Merten</li>
+            <li>Willyam Da Silva Castro</li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>

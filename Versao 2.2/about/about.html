@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+	
+		<title> Quem somos </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/homestyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="script/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            // Show and hide mobile menu
+            $(document).ready(function() {
+                $('.menu-icon').on('click touchstart', function(e) {
+                    $('html').toggleClass('menu-active');
+                    e.preventDefault();
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!--        NAVEGAÇÃO HORIZONTAL        -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+        <!-- ##  ##  ##  ##  ##  ##  ##  ##  ## -->
+
+        <nav class="hr-nav">
+
+            <!-- Navegação para Desktops e tablets -->
+
+            <ul class="nav-lst">
+                <li class="nav-lst-hd logo-margin">
+                     <a href="../index.html" class="nav-lk nav-header"><span class="nav-header">WikiBitsTeam</span></a>
+                </li>
+                <li class="nav-lst nav-lst-pad">
+                     <a href="../index.html" class="nav-lk">Home</a>
+                </li>
+                <li class="nav-lst nav-lst-pad dropdown">
+                     <a class="nav-lk"  href="../content/index.html">Content</a>
+                </li>
+                <li class="nav-lst nav-lst-pad to-rigth">
+                     <a href="#" class="nav-lk">About Us <span></span></a>
+                </li>
+                <li class="nav-lst-btn nav-lst-pad to-rigth">
+                    <button type="button" class="glyphicon glyphicon-th-list nav-lk menu-icon"></button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <menu class="menu-mb" id="menu-mb">
+
+            <button type="button" class="glyphicon glyphicon-th-list menu-icon to-right"></button>
+            <hr>
+
+            <nav class="vt-nav-mb">
+                <ul class="nav-lst">
+                    <li class="nav-lst-hm"><a class="vt-title" href="../index.html">Home</a></li>
+                    
+                    <li class="nav-lst-hm"><a class="vt-title" href="../content/index.html">Content</a><span class="hr"></span></li>
+                    
+                    <li class="nav-lst-hm"><a class="vt-title" href="#">About us</a></li>
+                    <span class="hr"></span>
+                </ul>
+
+            </nav>
+        </menu>
+        
+        <div class="hm-content">
+            <h1>Quem somos.</h1>
+            <br/><br/>
+            <p>Somos estudantes De Bacharelado em Sistemas da Informação, apresentando o presente site como trabalho para nota parcial da matéria de Laboratorio de Informática II, com o professor Juliano Marcelino, na segunda fase do curso</p>
+        </div>
+        
+        <footer>
+        <ul>
+            <dt>Autores - Contato</dt>
+            <hr width="40%"/>
+            <li>William Parlow Nichelatti - william.nichelatti@unerj.br</li>
+            <li>Anderson Merten - anderson.merten@unerj.br</li>
+            <li>Willyam Da Silva Castro - willyam.castro@unerj.br</li>
+        </ul>
+    </footer>
+    
+    </body>
+
+</html>
