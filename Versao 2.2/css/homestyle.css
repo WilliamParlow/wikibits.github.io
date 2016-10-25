@@ -1,0 +1,50 @@
+body {
+    background-image:url('bkimg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+menu.menu-mb {
+    top: 0;
+}
+
+div.hm-content {
+    margin: 0;
+    padding: 0;
+    margin-top: 240px;
+    text-align:center;
+    text-decoration:none !important;
+    list-style-type:none !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div.hm-content a,div.hm-content li {
+    transition: all .3s ease-out;
+    text-decoration:none !important;
+    list-style-type:none !important;
+    
+}
+
+div ul {
+    padding: 0;
+}
+
+div.hm-content li:hover {
+    transition: all .3s ease-in;
+    color: #000;   
+}
+
+footer {
+    margin-top: 20em;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+    text-align: center;
+    background-color: #111;
+    color: #3091FF;
+}
+
+footer li {
+    list-style-type: none;
+}

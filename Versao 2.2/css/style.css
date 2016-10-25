@@ -1,0 +1,894 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - -  GENERALtIZAÇÕES - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Opções do corpo */
+ body {
+    font-family:'Ubuntu', sans-serif !important;
+}
+/* Coloca o conteúdo abaixo onde foi declarado */
+ .clr-both {
+    clear:both;
+}
+/* Faz conteúdo mover-se para a esquerda */
+ .to-left {
+    float:left!important;
+}
+/* Faz conteúdo mover-se para a direita */
+ .to-rigth {
+    float:right!important;
+}
+
+/* Adiciona margem top */
+.tp-mg {
+    margin-top:20px;
+}
+/* Adiciona margem bottom */
+.bt-mg {
+    margin-bottom:20px;   
+}
+/* Add borda bottom */
+.bd-bt {
+   border-bottom: 1px solid #fff; 
+}
+/* Definições gerais de corpo e navegação horizontal */
+ body, nav.hr-nav {
+    padding:0;
+    margin:0;
+}
+/* Definições gerais da classe do dropdown e ancoras das listas da navegação */
+ .dropbtn, li.nav-lst a.nav-lk, li.nav-lst-hd a.nav-lk {
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - NAVEGAÇÃO HORIZONTAL  - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Definições da navegação */
+ nav.hr-nav {
+    position:fixed;
+    width:100%;
+    height:70px;
+    background-color:#111!important;
+    top:0;
+    opacity:.97;
+}
+/* Definições gerais de lista da navegação e logo */
+ li.nav-lst, li.nav-lst-hd {
+    height:100%!important;
+    float:left;
+}
+/* Definições gerais de lista da navegação, logo e botão */
+ li.nav-lst, li.nav-lst-btn, li.nav-lst-hd {
+    margin-top:0!important;
+    margin-bottom:0!important;
+}
+/* Definições do logo da navegação */
+ span.nav-header {
+    transition:all .15s ease-out;
+    font-size:1.5em;
+}
+/* Definição de tempo de trnsição de hover das ancoras e do botão da navegação */
+ a.nav-lk, button.menu-icon {
+    transition:all .2s ease-in-out;
+}
+/* Definições de margem do logo da navegação */
+ li.logo-margin {
+    margin-right:30px;
+    background-color:#000;
+}
+/* Definição de espaçamento de padding da lista de navegação */
+ .nav-lst-pad {
+    padding-top:6.33px;
+}
+/* Definições gerais da lista da navegação do logo e ancoras */
+ li.nav-lst-hd a.nav-lk {
+    padding:20px 30px;
+}
+/* Definições gerais da lista de navegação do logo */
+ li.nav-lst-hd {
+    display:block!important;
+}
+/* Definição da lista com o botão do menu para dispositivos mobile */
+ li.nav-lst-btn {
+    display:none!important
+}
+/* Definições gerais para as ancoras da navegação */
+ a.nav-lk {
+    color:#2A8EFF;
+    font-weight:700;
+}
+/* Definilçoes gerais para a lista nao ordenada da navegação */
+ ul.nav-lst {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - Definições de Dropdown box de navegação  - - - - - - - - */
+
+/* Definição geral da lista de dropdown */
+ li.dropdown {
+    display:inline-block;
+}
+/* Definições gerais do dropdown da navegação */
+ .dropbtn, li.nav-lst a.nav-lk {
+    padding:20px 16px;
+}
+/* Definições do dropdown que conterá outros links ou o conteúdo */
+ .dropdown-content {
+    display:none;
+    position:absolute;
+    background-color:#111;
+    min-width:160px;
+    left:0;
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, .4);
+}
+/* definições das ancoras contidas no dropdown */
+ .dropdown-content a {
+    color:#2A8EFF;
+    padding:12px 16px;
+    text-decoration:none!important;
+    display:block;
+    text-align:left;
+}
+/* Definições de efeito de hover do conteúdo de ancoras do dropdown da navegação */
+ .dropdown-content a:hover {
+    background-color:#fff;
+}
+/*  */
+ .dropdown:hover .dropdown-content {
+    display:block
+}
+/* - - - - - - - - Definições de Dropdown box de navegação  - - - - - - - - */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - Definições do Botão de Menu  - - -  - - - - - - - - */
+
+/* Definições do efeito de hover das ancoras e do botão para
+   dispositivos mobile da navegação */
+ a.nav-lk:hover, button.menu-icon:hover {
+    color:#fff;
+    transition:all .2s ease-in-out;
+}
+/* Definições do botão de menu mobile da navegação */
+ button.menu-icon {
+    color:#2A8EFF;
+    border:hidden;
+    background-color:#111;
+    margin:13px 17px;
+    font-size:2em;
+}
+/* - - - - - - - - - Definições do Botão de Menu  - - -  - - - - - - - - */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - NAVEGAÇÃO VERTICAL  - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Definições gerais da navegação vertical */
+ nav.vt-nav {
+    margin:72px 2px 2px;
+    padding:0;
+    height:89.85%;
+    width:196.25px;
+    position:fixed;
+    float:left;
+    left:0;
+    background-color:#2A8EFF;
+    color:#000;
+    overflow:auto;
+    opacity:.97;
+}
+/* Definições das ancoras de titulo e subtitulo da navegação */
+ a.vt-subtitle, a.vt-title {
+    width:100%;
+    display:inline-block;
+    text-decoration:none!important;
+    color:#000!important;
+    transition:all .1s ease-out;
+    float:left;
+}
+/* Definições das ancoras de titulo */
+ a.vt-title {
+    font-size:1em;
+    font-weight:700;
+    padding:10px;
+}
+/* Definições das ancoras de subtitulo */
+ a.vt-subtitle {
+    font-size:.85em;
+    padding:10px 10px 10px 30px;
+}
+/* Definições de hover das ancoras de subtitulos e titulos */
+ a.vt-subtitle:hover, a.vt-title:hover {
+    transition:all .1s ease-in;
+    background-color:#000;
+    color:#fff!important;
+}
+/* Definição da ancora que será colocada como ultimo item da navegação */
+ a.last-title {
+    margin-bottom:16px;
+}
+/* Opção de ativo, ou da seçao atual que o usuário se encontra */
+ .vt-menu-active {
+    background-color:#000;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - -  CONTEÚDO DA PÁGINA - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - Definições de conteúdo textual - - - - - - - - -  */
+
+/* Definições da div que contem o conteúdo da página */
+ div.text-content {
+    margin:70px 0 0;
+    padding:50px;
+    width:84%;
+    float:right;
+    text-align:justify!important;
+}
+/* Definições da área que conterá o conteúdo da página para possíveis ajustes */
+ div.vt-text-container {
+    width:100%;
+    height:auto;
+    float:right;
+}
+/* Definições gerais do cabeçalho principal do conteúdo da página  */
+ header.header-content {
+    margin:0;
+    width:100%;
+    height:250px;
+    padding:65px 30px;
+    background-color:#fff;
+    text-align:center;
+}
+/* Definições gerais do título principal da página */
+ h1.text-header {
+    font-size:5em;
+    transition:all .3s ease-out;
+}
+/* Definições gerais do separador de titulos */
+ hr.header-separator {
+    margin-bottom:60px;
+}
+/* Definições gerais dos parágrafos */
+ p {
+    margin:0 10px;
+    text-indent:2.5em;
+}
+/* Definições gerais do título do texto */
+ h1.text-title {
+    font-size:2em;
+    font-weight:700;
+    margin:20px;
+}
+h1.text-title a {
+    text-decoration: none;
+    cursor: default;
+    color: #2957D0;
+}
+/* - - - - - - - - - - Definições de conteúdo textual - - - - - - - - -  */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - Definições de imagem do texto  - - - - -  */
+
+/* Definições da div que conterá as imagens e o título das mesmas */
+ div.img-txt {
+    width:100%;
+    height:auto;
+    text-align:center;
+    margin-top:2em;
+    margin-bottom:2em;
+}
+/* Definições do span para titulos das imagens */
+ span.title-img {
+    clear:both!important;
+    font-weight:700;
+}
+/* Definições gerais das imagens do conteúdo da página */
+ img.img-txt {
+    margin:1em;
+    width:35%;
+    float:none;
+}
+/* - - - - - Definições de imagem do texto  - - - - -  */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - RODAPÉ  - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Definições gerais do rodapé */
+ footer {
+    bottom: 0;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - -  DEFINIÇÕES DE RESPONSIVIDADE - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - Definições de responsividade - - - - - - - - -  */
+
+/* Definições de ajuste da página até 3000 px */
+ @media screen and (max-width:3000px) {
+    /* Definições gerais de ajuste de parágrafos */
+    p {
+        font-size:2.1em!important;
+    }
+    ul.txt-lst {
+        font-size:1.6em!important;
+    }
+    span.title-img {
+        font-size:2.2em!important;
+    }
+    h1.text-header {
+        font-size:5em;
+        transition:all .3s ease-in;
+    }
+    h1.text-title {
+        font-size: 2.8em;
+        margin: 85px;
+    }
+    header.header-content {
+        padding:65px 35px;
+    }
+    hr.header-separator {
+        margin-top: 130px;
+    }
+    nav.hr-nav {
+        height:90px;
+    }
+    nav.vt-nav {
+        height:90.9%;
+        width:267px;
+        margin:97px 5px 5px;
+    }
+    div.text-content {
+        margin:162px 0 0;
+    }
+    li.nav-lst a.nav-lk {
+        margin-top: 3.5px;
+        transition:all .15s ease-out;
+        font-size:1.8em;
+    }
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:2.5em !important;
+    }
+    .dropdown-content {
+        min-width:240px;
+        font-size: 2em;
+    }
+    /* Definições gerais de ajuste de ancora de titulo e subtitulo da navegação vertical */
+    a.vt-subtitle, a.vt-title {
+        font-size:1.8em!important;
+    }
+    /* Definições gerais de ajuste de lista do conteúdo de texto */
+    ul.txt-lst li {
+        margin:10px;
+        font-size:1.2em!important;
+    }
+}
+@media screen and (max-width:2450px) {
+    /* Definições gerais de ajuste de parágrafos */
+    p {
+        font-size:1.7em!important;
+    }
+    ul.txt-lst {
+        font-size:1.4em!important;
+    }
+    span.title-img {
+        font-size:1.6em!important;
+    }
+    h1.text-title {
+        font-size: 2em;
+        margin: 85px;
+    }
+    h1.text-header {
+        font-size:4em;
+        transition:all .3s ease-in;
+    }
+    hr.header-separator {
+        margin-top: 50px;
+    }
+    div.text-content {
+        margin:102px 0 0;
+        width:85%!important;
+    }
+    li.nav-lst a.nav-lk {
+        margin-top: 3.5px;
+        transition:all .15s ease-out;
+        font-size:1.8em;
+    }
+    a.last-title {
+        margin-bottom: 55px;
+    }
+    nav.hr-nav {
+        height:80px;
+    }
+    nav.vt-nav {
+        height:92%;
+        width:227px;
+        margin:86px 5px 5px;
+    }
+    li.nav-lst a.nav-lk {
+        margin-top: 3px;
+        transition:all .15s ease-out;
+        font-size:1.3em;
+    }
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:2em !important;
+    }
+    /* Definições gerais de ajuste de ancora de titulo e subtitulo da navegação vertical */
+    a.vt-subtitle, a.vt-title {
+        font-size:1.31em!important;
+    }
+}
+@media screen and (max-width: 2000px) {
+    div.text-content {
+        width:80%!important;
+        margin-right: 40px;
+    }
+}
+@media screen and (max-width: 1785px) {
+    /* Definições gerais de ajuste de parágrafos */
+    p {
+        font-size:1.5em!important;
+    }
+    ul.txt-lst {
+        font-size:1.4em!important;
+    }
+    span.title-img {
+        font-size:1.5em!important;
+    }
+    h1.text-header {
+        font-size: 3.5em;
+        transition:all .3s ease-in;
+    }
+    h1.text-title {
+        font-size: 2em;
+        margin: 85px;
+    }
+    hr.header-separator {
+        margin-top: 30px;
+    }
+    nav.hr-nav {
+        height:80px;
+    }
+    /* A FAZER FAZER AQUI */
+    nav.vt-nav {
+        height:92.2%;
+        width:231px;
+        margin:85px 5px 5px;
+    }
+    div.text-content {
+        width:78%!important;
+        margin-right: 40px;
+        margin: 90px 0 0;
+    }
+    li.nav-lst a.nav-lk {
+        margin-top: 2px;
+        transition:all .15s ease-out;
+        font-size:1.3em;
+    }
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:2em !important;
+    }
+    .dropdown-content {
+        min-width:220px;
+        font-size: 1.3em;
+    }
+    /* Definições gerais de ajuste de ancora de titulo e subtitulo da navegação vertical */
+    a.vt-subtitle, a.vt-title {
+        font-size:1.3em!important;
+    }
+    /* Definições gerais de ajuste de lista do conteúdo de texto */
+    ul.txt-lst li {
+        margin:10px;
+        font-size:1.2em!important;
+    }
+}
+@media screen and (max-width: 1450px) {
+    p {
+        font-size:1.1em!important;
+    }
+    ul.txt-lst {
+        font-size:1em!important;
+    }
+    span.title-img {
+        font-size:1.2em!important;
+    }
+    h1.text-header {
+        font-size: 2.6em;
+        transition:all .3s ease-in;
+    }
+    h1.text-title {
+        font-size: 1.7em;
+        margin: 55px;
+    }
+    nav.hr-nav {
+        height:70px;
+    }
+    nav.vt-nav {
+        height:92.2%;
+        width:185px;
+        margin:74px 4px 4px;
+    }
+    div.text-content {
+        margin-top: 90px;
+        width:79%!important;
+        margin-right: 30px;
+    }
+    li.nav-lst a.nav-lk {
+        margin-top: 0;
+        transition:all .15s ease-out;
+        font-size:1em;
+    }
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:1.5em !important;
+    }
+    .dropdown-content {
+        min-width:140px;
+        font-size: 1em;
+    }
+    hr.header-separator {
+        margin-top: 0 !important;
+    }
+    header.header-content {
+        padding: 0;
+        height: 130px;
+    }
+    /* Definições gerais de ajuste de ancora de titulo e subtitulo da navegação vertical */
+    a.vt-subtitle, a.vt-title {
+        font-size:1em!important;
+    }
+}
+@media screen and (max-width:1200px) {
+    p {
+        font-size:1.2em!important;
+    }
+    ul.txt-lst {
+        font-size:1.1em!important;
+    }
+    span.title-img {
+        font-size:1.3em!important;
+    }
+    div.text-content {
+        width:80%!important;
+        margin-right: 0;
+    }
+    h1.text-header {
+        font-size: 3em;
+        transition:all .3s ease-in;
+    }
+}
+/* Definições de ajuste da página até 940 px - Inicio estilo mobile */
+ @media screen and (max-width:968px) {
+    /* Definições gerais de ajuste de lista da navegação */
+    li.nav-lst {
+        display:none;
+    }
+    /* Definições gerais de ajuste do botão para menu mobile */
+    li.nav-lst-btn {
+        display:block!important;
+    }
+    /* Definições gerais de ajuste de navegação vertical */
+    nav.vt-nav {
+        display:none;
+    }
+    /* Definições gerais de ajuste de cabeçalho do título principal */
+    header.header-content {
+        padding: 0;
+        margin-top: 90px;
+    }
+    /*  Definições gerais de ajuste de div que contém todo o conteúdo textual */
+    div.vt-text-container {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    /* Definições da separação do titulo principa com o resto do conteúdo */
+    hr.header-separator {
+        margin-top: 80px !important;
+    }
+    /*  Definições gerais de ajuste de div que contém o conteúdo textual */
+    div.text-content {
+        float:none!important;
+        width:100%!important;
+        margin:3em;
+        padding:18px;
+    }
+    /*  Definições gerais de ajuste de titulo principal */
+    h1.text-header {
+        font-size:4em;
+        transition:all .3s ease-in;
+    }
+    /*  Definições gerais de ajuste de parágrafo, titulos de imagens e lista do texto */
+    p, span.title-img, ul.txt-lst {
+        font-size:95%;
+    }
+    h1.text-title {
+        font-size: 2.4em;
+    }
+    p {
+        font-size:1.6em!important;
+    }
+    ul.txt-lst {
+        font-size:1.3em!important;
+    }
+    span.title-img {
+        font-size:1.5em!important;
+    }
+    a.vt-subtitle, a.vt-title {
+        font-size:1.5em!important;
+    }
+}
+/* Definições de ajuste da página até 830 px */
+ @media screen and (max-width:730px) {
+    /* Definições gerais de ajuste de titulo principal */
+    h1.text-header {
+        font-size:2.6em;
+        transition:all .3s ease-in;
+    }
+    p {
+        font-size:1.08em!important;
+    }
+    ul.txt-lst {
+        font-size:0.9em!important;
+    }
+    span.title-img {
+        font-size:1.1em!important;
+    }
+    h1.text-title {
+        font-size: 1.5em;
+        margin: 55px;
+    }
+    hr.header-separator {
+        margin-top: 30px !important;
+    }
+    header.header-content {
+        margin-top: 90px;
+        height: auto;
+    }
+    div.text-content {
+        margin: 15px;
+    }
+}
+@media screen and (max-width:330px) {
+    h1.text-header {
+        font-size:1.7em;
+        transition:all .3s ease-in;
+    }
+    p {
+        font-size:.5em!important;
+    }
+    ul.txt-lst {
+        font-size:.6em!important;
+    }
+    span.title-img {
+        font-size:.5em!important;
+    }
+    h1.text-title {
+        font-size: 1em;
+        margin-right: 0 !important;
+        margin: 55px;
+    }
+    div.text-content {
+        margin: 0;
+    }
+}
+@media screen and (max-width:330px) {
+    p {
+        font-size:1.08em!important;
+    }
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:.9em !important;
+    }
+    nav.hr-nav {
+        height:60px;
+    }
+    button {
+        margin: 8px 8px 0 0!important;
+    }
+}
+@media screen and (max-width:330px) {
+    span.nav-header {
+        transition:all .15s ease-out;
+        font-size:.9em !important;
+    }
+    nav.hr-nav {
+        height:60px;
+    }
+    button {
+        margin: 8px 8px 0 0!important;
+    }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - AJUSTES DE HEIGHT - - - - - - - */
+
+/* - - - - - - AJUSTES DE HEIGHT - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - Definições de responsividade - - - - - - - - -  */
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - MENU PARA DISPOSITIVOS MOBILE - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Definiçoes gerais do menu mobile */
+ menu.menu-mb {
+    display:none;
+    margin:0;
+    right:0!important;
+    width:0;
+    opacity:.995;
+    transition:all .3s linear;
+    height:100%;
+    padding:30px;
+}
+/* definições gerais do menu mobile ao ser ativado ou clicado */
+ .menu-active menu.menu-mb, nav.vt-nav-mb {
+    margin:0;
+    width:100%;
+    position:fixed;
+    background-color:#111;
+}
+/* definições gerais do menu mobile ao ser ativado ou clicado */
+ .menu-active menu.menu-mb {
+    padding:7px 0 0;
+    display:inline-block;
+    z-index:1;
+    height:100%;
+    float:right!important;
+    transition:all .3s linear;
+}
+/* Definições gerais do menu mobile vertical */
+ nav.vt-nav-mb {
+    padding:0;
+    text-align:center!important;
+    height:80.85%;
+    float:left;
+    left:0;
+    overflow:auto;
+}
+/* Definição da cor das ancoras do menu mobile */
+ nav.vt-nav-mb a {
+    color:#ccc!important;
+}
+/* Exemplo de utilização do webkit e outros motores
+
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - -  BARRA DE ROLAGEM - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - Estilização da barra de rolagem - - - - - - - */
+ ::-webkit-scrollbar {
+    width: 8px;
+    background: #777;
+}
+::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 100px;
+}
+/* - - - - - - Estilização da barra de rolagem - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+/* Estilização botões de t´[ópicos */
+ form.topic-nav {
+    text-align:"center";
+    align:"center";
+}
